@@ -2,7 +2,7 @@
 
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
+<meta charset="utf-f"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>O Manuscrito da Mente Oculta - Segredos de Persuasão e Poder Mental</title>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -30,7 +30,7 @@
             perspective: 1000px;
         }
         .book-cover {
-            transform: rotateY(-15deg);
+            transform: rotateY(-15deg );
             box-shadow: 15px 15px 30px rgba(255, 215, 0, 0.2);
             transition: all 0.3s ease;
         }
@@ -52,21 +52,30 @@
                 box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
             }
         }
+        /* Estilos para melhorar a responsividade da headline */
+        @media (max-width: 768px) {
+            .hero-h1 {
+                font-size: 2rem; /* Tamanho da fonte menor para celular */
+            }
+            .hero-p {
+                font-size: 1rem; /* Tamanho do parágrafo menor para celular */
+            }
+        }
     </style>
 </head>
 <body class="bg-black-900 text-white font-sans">
 <section class="hero" style="position: relative; height: 100vh; background: url('image-9-16.png') center/cover no-repeat;">
 <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.65);"></div>
 <div style="position: relative; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; text-align:center; color:#fff; padding:20px;">
-<h1 style="font-size:2.5rem; font-weight:700; color:#FFD700;">Estão manipulando você AGORA e você nem percebe!</h1>
-<p style="font-size:1.2rem; margin-top:15px; max-width:700px;">Descubra os segredos de persuasão e poder mental que poucos conhecem. Proteja-se e domine as mesmas técnicas usadas contra você.</p>
+<h1 class="hero-h1" style="font-size:2.5rem; font-weight:700; color:#FFD700;">Estão manipulando você AGORA e você nem percebe!</h1>
+<p class="hero-p" style="font-size:1.2rem; margin-top:15px; max-width:700px;">Descubra os segredos de persuasão e poder mental que poucos conhecem. Proteja-se e domine as mesmas técnicas usadas contra você.</p>
 <div style="margin-top:30px; animation: pulse 2s infinite;">
 <img alt="Mockup Manuscrito" src="mackupsemfundo.png" style="max-width:280px;"/>
 </div>
 <div style="margin-top:25px; background:#FFD700; color:#000; padding:20px; border-radius:12px; font-weight:bold; font-size:1.2rem; max-width:400px;">
 <p style="margin:0;">🔥 De R$37 por apenas <span style="font-size:1.6rem;">R$7</span></p>
 <p style="margin:10px 0 0;">⚡ Oferta válida somente hoje</p>
-<a href="#comprar" style="display:inline-block; margin-top:15px; background:#000; color:#FFD700; padding:15px 25px; border-radius:8px; font-size:1.2rem; text-decoration:none; font-weight:bold;">Quero garantir meu acesso</a>
+<a href="#oferta" style="display:inline-block; margin-top:15px; background:#000; color:#FFD700; padding:15px 25px; border-radius:8px; font-size:1.2rem; text-decoration:none; font-weight:bold;">Quero garantir meu acesso</a>
 </div>
 </div>
 </section>
@@ -360,7 +369,7 @@
             </h2>
 <div class="space-y-4">
 <div class="bg-black-900 p-4 rounded-lg">
-<div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(1)">
+<div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(1 )">
 <h3 class="font-bold">Como vou receber o material?</h3>
 <i class="fas fa-plus text-yellow-500" id="faq-icon-1"></i>
 </div>
@@ -437,7 +446,7 @@
 </footer>
 <script>
         // Toggle FAQ answers
-        function toggleFAQ(num) {
+        function toggleFAQ(num ) {
             const answer = document.getElementById(`faq-answer-${num}`);
             const icon = document.getElementById(`faq-icon-${num}`);
             
@@ -467,5 +476,5 @@
             });
         });
     </script>
-<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img alt="DeepSite Logo" src="https://enzostvs-deepsite.hf.space/logo.svg" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"/><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank">DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=gjs25k/manuscrito" style="color: #fff;text-decoration: underline;" target="_blank">Remix</a></p></body>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img alt="DeepSite Logo" src="https://enzostvs-deepsite.hf.space/logo.svg" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0 ) invert(1);"/><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank">DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=gjs25k/manuscrito" style="color: #fff;text-decoration: underline;" target="_blank">Remix</a></p></body>
 </html>
